@@ -1,7 +1,7 @@
 package example;
 import java.time.LocalDate;
 
-class UserVo{
+public class UserVo{
     private String name;
     private int age;
     private char gender;
