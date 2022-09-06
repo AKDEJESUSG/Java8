@@ -11,8 +11,8 @@ import example.src.com.practice.java.data.UserDataBase;
 public class PredicateAndConsumerExample {
     
     private static List<User> users= UserDataBase.getAllUsers(); 
-    private static Predicate<User> pAge = (user->user.getAge()>=25);
-    private static Predicate<User> pGen = (user->user.getGender()=='M');
+    public static Predicate<User> pAge = (user->user.getAge()>=25);
+    public static Predicate<User> pGen = (user->user.getGender()=='M');
     private static BiConsumer<String,List<String>> bCpro = (name, perm)-> {
         System.out.println(String.format("name: %s, perssions: %s", name, perm));
     };
