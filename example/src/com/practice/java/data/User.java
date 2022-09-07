@@ -61,7 +61,7 @@ public class User{
                 "name='"+ name +"', "+
                 "age='"+ age + "', "+
                 "gender='"+ gender + "', "+
-                "birthday='"+ birthday.format(formatter) +"', "+
+                "birthday='"+ (birthday!=null?birthday.format(formatter):null) +"', "+
                 "permissions="+ permissions +
                 '}';
     }
