@@ -1,6 +1,5 @@
 package example.src.com.practice.java.FuntionalInterfaces;
 
-import java.util.List;
 import java.util.function.UnaryOperator;
 
 public class UnaryOperatorExample {
