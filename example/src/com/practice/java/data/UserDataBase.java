@@ -17,9 +17,8 @@ public class UserDataBase {
         User user7 =  new User("Alexis", 24, 'M', LocalDate.of(1998, Month.AUGUST, 12), Arrays.asList("read","delete"));
         User user8 =  new User("Natalia", 23, 'F', LocalDate.of(1999, Month.SEPTEMBER, 17), Arrays.asList("read"));
 
-        List<User> users = Arrays.asList(user1, user2, user3, user4, user5, user6, user7, user8);
+        return Arrays.asList(user1, user2, user3, user4, user5, user6, user7, user8);
 
-        return users;
     }
     
 }
