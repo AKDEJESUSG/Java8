@@ -1,6 +1,6 @@
 package example.src.com.practice.java.defaults;
 
-public class Client123 implements Interface1, Interface2, Interface3{
+public class Client123 implements Interface3{
     
     @Override
     public void methodA() {
