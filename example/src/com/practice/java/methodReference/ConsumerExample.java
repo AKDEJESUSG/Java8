@@ -11,7 +11,7 @@ public class ConsumerExample {
     private static List<User> users = UserDataBase.getAllUsers();
     private static Consumer<User> cUserPrint = System.out::println;
     private static void printUsersPer(User u){
-        System.out.println(u.getName()+" = "+u.getPermissions());;
+        System.out.println(u.getName()+" = "+u.getPermissions());
     };
     private static Consumer<User> cPer = ConsumerExample::printUsersPer;
     public static void main(String[] args) {
