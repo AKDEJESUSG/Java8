@@ -2,17 +2,25 @@ pipeline {
     agent any
 
     stages {
-        stage('Build 2') {
+        stage('Build') {
             steps {
                 echo 'Building...'
             }
         }
-        stage('Test 2') {
-            steps {
-                echo 'Testing...'
-            }
+        stage('Test') {
+            parallel(
+                  stage('Test On Windows'): {
+                      steps {
+                            echo "This is branch a"
+                          }
+                  },
+                  stage('Test On Windows'): {
+                      steps {
+                            echo "This is branch a"
+                          }
+                  }
         }
-        stage('Deploy 2') {
+        stage('Deploy') {
             steps {
                 echo 'Deploying....'
             }
