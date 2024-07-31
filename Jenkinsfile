@@ -8,17 +8,18 @@ pipeline {
             }
         }
         stage('Test') {
-            parallel(
+            parallel {
                   stage('Test On Windows') {
-                      steps {
+                    steps {
                             echo "Testing in windows"
-                          }
+                    }
                   }
                   stage('Test On Linux') {
-                      steps {
+                    steps {
                             echo "testing in linux"
-                          }
-                  }
+                    }
+                }
+            }
         }
         stage('Deploy') {
             steps {
