@@ -9,12 +9,12 @@ pipeline {
         }
         stage('Test') {
             parallel(
-                  stage('Test On Windows'): {
+                  stage('Test On Windows') {
                       steps {
                             echo "This is branch a"
                           }
                   },
-                  stage('Test On Windows'): {
+                  stage('Test On Windows') {
                       steps {
                             echo "This is branch a"
                           }
