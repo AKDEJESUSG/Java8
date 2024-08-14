@@ -16,6 +16,7 @@ pipeline {
             steps {
                 withSonarQubeEnv('ServerNameSonar') {
                     bat '''mvn clean verify sonar:sonar -Dsonar.projectKey=testing-github -Dsonar.projectName='testing github' -Dsonar.host.url=http://localhost:9000''' 
+                }
             }
         }
             
